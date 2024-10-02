@@ -1,0 +1,98 @@
+﻿<Page x:Class="WorrldWebDesign.Statement.PageStatmentMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WorrldWebDesign.Statement"
+      mc:Ignorable="d" 
+      d:DesignHeight="490"
+      Title="PageStatmentMain" Width="927">
+
+    <Grid Background="#F3F9FB" Margin="0,0,-51,0">
+        <StackPanel 
+            Orientation="Vertical"
+            HorizontalAlignment="Right"
+            Background="White"
+            Margin="0,50,291,50"
+            Width="345"
+    />
+        <StackPanel HorizontalAlignment="Center" Margin="0,0,0,92">
+            <Label 
+            Content="Подача заявления"
+            FontSize="22"
+            FontWeight="Bold"
+            FontStyle="Normal"
+            Margin="0 55 0 0"
+                />
+        </StackPanel>
+
+        <StackPanel Width="190" Margin="300,105,300,259">
+            <StackPanel Margin="0 18 0 0">
+                <Label 
+             Content="Контакная информация"
+             FontSize="16"
+             FontWeight="Bold"
+             FontStyle="Normal"
+             />
+                <TextBox 
+             Name="TxbInfo"
+             Height="20"
+             BorderBrush="Black"
+             Style="{StaticResource TxbDefault}" Width="189"
+                 />
+            </StackPanel>
+        </StackPanel>
+
+
+        <StackPanel Width="190" Margin="300,191,300,177">
+            <StackPanel Margin="0 18 0 0">
+                <Label 
+             Content="Дополнительная инфо"
+             FontSize="16"
+            FontWeight="Bold"
+            FontStyle="Normal"
+     />
+                <TextBox 
+                 Name="TxbInfo1"
+                 Height="20"
+                 BorderBrush="Black"
+                 Style="{StaticResource TxbDefault}"
+                     />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel 
+            Margin="359,273,414,92">
+            <StackPanel>
+                <Label
+                Content="Я принимаю условия соглашения"
+                Height="25"
+                FontSize="10"
+                FontWeight="Bold"
+                FontStyle="Normal" Width="184"
+                
+            />
+            </StackPanel>
+            <CheckBox 
+                x:Name="checkBox" 
+                IsThreeState="True" 
+                IsChecked="True" 
+                Height="15" 
+                Content="Отмечено" 
+                Margin="0 0 0 0" Width="172"
+                />
+        </StackPanel>
+
+        <StackPanel
+        Margin="0,350,0,28" >
+            <Button
+        x:Name ="BtnAccept"
+        Content="Подать"
+        Margin="0 10 0 0"
+        Style="{StaticResource BtnDefault}"
+        Width="100" 
+        Height="25"  
+    />
+        </StackPanel>
+    </Grid>
+</Page>
